@@ -22,6 +22,8 @@
 ;  ([n] (lazy-seq (cons n (prime-numbers (prime-requirements (inc n))))))
 ;  )
 
+
+
 (defn divisor? [a b]
   (= 0 (rem a b)))
 
@@ -37,5 +39,7 @@
 
 
 (defn prime-numbers [] (filter prime? (iterate inc 2)))
+
+
 
 

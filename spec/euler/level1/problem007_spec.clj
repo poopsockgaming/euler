@@ -29,6 +29,6 @@
   (it "Makes list of numbers"
     (should= [1 2 3 4 5] (take 5 (numbers))))
   (it "Gets prime numbers"
-    (should= [2 3 5 7 11] (take 5 (prime-numbers))))
+    (should= 104743 (apply max (take 10001 (prime-numbers)))))
 )
 (run-specs)
